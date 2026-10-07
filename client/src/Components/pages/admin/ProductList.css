@@ -1,0 +1,352 @@
+/* =========================
+   PRODUCT PAGE
+========================= */
+
+.product-page {
+  min-height: 100vh;
+  padding: 30px;
+  background: #f7f8fa;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.product-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+}
+
+.product-header p {
+  margin-top: 6px;
+  color: #888;
+  font-size: 14px;
+}
+
+
+/* =========================
+   ADD PRODUCT BUTTON
+========================= */
+
+.add-btn {
+  padding: 12px 20px;
+
+  background: #21a453;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  background: #188d45;
+}
+
+
+/* =========================
+   EXPORT / IMPORT
+========================= */
+
+.top-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.top-buttons button {
+  padding: 10px 18px;
+
+  background: white;
+
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  color: #555;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.top-buttons button:hover {
+  background: #f0f0f0;
+}
+
+
+/* =========================
+   TABLE CONTAINER
+========================= */
+
+.table-container {
+  width: 100%;
+
+  background: white;
+
+  padding: 15px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+
+  overflow-x: auto;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 950px;
+}
+
+
+/* TABLE HEADER */
+
+thead {
+  background: #eef1f4;
+}
+
+th {
+  padding: 14px 12px;
+
+  text-align: left;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #333;
+
+  white-space: nowrap;
+}
+
+
+/* TABLE BODY */
+
+td {
+  padding: 15px 12px;
+
+  border-bottom: 1px solid #eeeeee;
+
+  font-size: 13px;
+
+  color: #555;
+
+  white-space: nowrap;
+}
+
+tbody tr:hover {
+  background: #fafafa;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+/* SHOW */
+
+.show-btn {
+  padding: 8px 13px;
+
+  background: #edfafa;
+
+  color: #138888;
+
+  border: 1px solid #d8eeee;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  transition: 0.2s;
+}
+
+.show-btn:hover {
+  background: #d9f5f5;
+}
+
+
+/* EDIT */
+
+.edit-btn {
+  padding: 8px 13px;
+
+  background: #edf4ff;
+
+  color: #316edb;
+
+  border: 1px solid #dceaff;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  transition: 0.2s;
+}
+
+.edit-btn:hover {
+  background: #dceaff;
+}
+
+
+/* DELETE */
+
+.delete-btn {
+  padding: 8px 13px;
+
+  background: #fff0f0;
+
+  color: #d33;
+
+  border: 1px solid #f5d5d5;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #ffe0e0;
+}
+
+
+/* =========================
+   BLOCK BUTTON
+========================= */
+
+.block-btn {
+  padding: 8px 18px;
+
+  background: #eaf8ed;
+
+  color: #1d9143;
+
+  border: 1px solid #d5efd9;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  transition: 0.2s;
+}
+
+.block-btn:hover {
+  background: #d9f2df;
+}
+
+
+/* =========================
+   UNBLOCK BUTTON
+========================= */
+
+.unblock-btn {
+  padding: 8px 15px;
+
+  background: #fff0ee;
+
+  color: #d84a38;
+
+  border: 1px solid #f3d4d0;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  transition: 0.2s;
+}
+
+.unblock-btn:hover {
+  background: #ffe0dc;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .product-page {
+    padding: 20px;
+  }
+
+  .product-header {
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .product-page {
+    padding: 15px;
+  }
+
+  .product-header {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+
+  .top-buttons {
+    width: 100%;
+  }
+
+  .top-buttons button {
+    flex: 1;
+  }
+
+  .table-container {
+    padding: 10px;
+  }
+
+}

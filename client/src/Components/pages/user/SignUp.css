@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+  gap: 60px;
+}
+
+
+/* =========================
+   LEFT SECTION
+========================= */
+
+.left-section {
+  width: 500px;
+  height: 520px;
+background-image:url(../../../assets/perfumeimage1.png);
+ 
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+
+  border-radius: 0 170px 0 170px;
+
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.48);
+}
+
+.left-content {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+
+  text-align: center;
+
+  color: white;
+}
+
+.left-content h1 {
+  font-size: 26px;
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+
+.left-content p {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   RIGHT SECTION
+========================= */
+
+.right-section {
+  width: 330px;
+}
+
+form {
+  width: 100%;
+}
+
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.social-btn {
+  width: 50%;
+  height: 34px;
+
+  background: white;
+
+  border: 1px solid #07516a;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  font-size: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  transition: 0.3s;
+}
+
+.social-btn:hover {
+  background: #f2f2f2;
+}
+
+.google {
+  color: #4285f4;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.facebook {
+  color: #1877f2;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 12px 0 15px;
+}
+
+.divider span {
+  height: 1px;
+  background: #c8c8c8;
+  flex: 1;
+}
+
+.divider p {
+  font-size: 8px;
+  color: #555;
+  white-space: nowrap;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-box {
+  width: 100%;
+  height: 30px;
+
+  background: #dedede;
+
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 9px;
+
+  border: 1px solid transparent;
+
+  transition: 0.2s;
+}
+
+.input-box:focus-within {
+  border-color: #07516a;
+  background: #eeeeee;
+}
+
+.input-error {
+  border-color: #e53935;
+}
+
+.icon {
+  font-size: 11px;
+  color: #444;
+  width: 20px;
+}
+
+.input-box input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 9px;
+
+  color: #333;
+}
+
+.input-box input::placeholder {
+  color: #555;
+}
+
+.eye {
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  color: #555;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error {
+  color: #e53935;
+
+  font-size: 9px;
+
+  margin-top: 4px;
+}
+
+
+/* =========================
+   TERMS
+========================= */
+
+.terms {
+  margin-top: 3px;
+  margin-bottom: 14px;
+}
+
+.terms label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 8px;
+
+  color: #333;
+}
+
+.terms input {
+  width: 9px;
+  height: 9px;
+
+  accent-color: #064b62;
+}
+
+.terms a {
+  color: #07516a;
+  text-decoration: underline;
+}
+
+
+/* =========================
+   SIGNUP BUTTON
+========================= */
+
+.signup-btn {
+  width: 100%;
+  height: 30px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: #00465e;
+
+  color: white;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background: #003444;
+  transform: translateY(-1px);
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-text {
+  text-align: center;
+
+  font-size: 8px;
+
+  margin-top: 11px;
+
+  color: #222;
+}
+
+.login-text a {
+  color: #07516a;
+
+  text-decoration: underline;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+  .page {
+    flex-direction: column;
+
+    gap: 35px;
+
+    padding: 20px;
+  }
+
+  .left-section {
+    width: 100%;
+    max-width: 500px;
+
+    height: 300px;
+
+    border-radius: 0 100px 0 100px;
+  }
+
+  .right-section {
+    width: 100%;
+    max-width: 400px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .page {
+    padding: 15px;
+  }
+
+  .left-section {
+    height: 250px;
+
+    border-radius: 0 80px 0 80px;
+  }
+
+  .left-content h1 {
+    font-size: 23px;
+  }
+
+  .social-btn {
+    height: 38px;
+  }
+
+  .input-box {
+    height: 40px;
+  }
+
+  .signup-btn {
+    height: 40px;
+  }
+
+}
